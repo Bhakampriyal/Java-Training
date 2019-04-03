@@ -1,0 +1,561 @@
+
+https://github.com/richardsforu/jpmc.git
+----------------------------------------
+Mean Stack
+M - Mongo DB - No SQL
+E - Express JS
+A - Angular,React JS - Framer-->to minimise the DOM manipulation
+N - Node JS - Back end Server
+
+
+DOM - Document Object Model
+Tree Like structure
+Data in browser is loaded from DOM. 
+say in one webpage already 2 images were loaded,if i click on new image, then
+DOM will reshuffle all the data already loaded,coz of which browser becomes low
+To avoid this we are using Aungular,React JS kind of framework
+
+HTML - W3C - Open Organization.Design a software. Gives specs for HTML,XML
+
+JS - Ecma Script(ES) - Org works for scripts.Current, JS supports OOPS concept
+JS is now a days used for back end too.
+
+Java moving to Reactive programming - > Asynchronous pgm
+
+HTML - HyperText markup lang
+To create static web page
+To navigate across pages
+Web page Design - Static & Dynamic pages
+Static - will not interract with server,Dynamic - Updates from server
+To run a HTML, we need DOM. DOM is already in Browser
+To created static page , we use HTML
+To do dynamic page, JS is used & is more for DOM manipulation. JS needs HTML to work,but HTML is independent.But now a days JS 
+1) Browser environment
+JS has run time engine. Run time engines differs for each browser,coz of which web pages are 
+	Chrome - V8 engine
+	IE - Chakra
+	Firefox - Rehno
+JQuery - To make browser compatible.This J Query also vanished when Angular,ReactJS came into picture
+2) Non Browser environment
+	Node JS
+
+HTML 
+Tag based technology
+Case insensitive
+Elements/TAGS
+Tags Types
+1) Closing Tags
+ 	<h1> </h1>,<button>,click here </button>
+2) Self closing Tags
+	<hr/> <br/>
+
+Starts with <HTML>
+<Head>
+JS needs to write in head section
+	<Title></Title>
+</Head>
+<Body>
+</Body>
+</HTML>
+
+In general HTML will not support line break, We need to explicitly specify line break
+using tag <br/>
+
+<h1 align="Center">Welcome to HTML</H1>
+
+Here, align is attribute of the header H1
+
+CSS or bootstrapping- Working on stylings of HTML 
+
+All tags are predefined by W3C. Can't use user defined tags.But in XML we can have.
+Default sace is one space
+&-->Used for smileys,more spaces etc
+&nbsp
+
+<Pre></pre> tags - What ever given inside it will diplayed as is. No HTML rule applies here
+
+<p></p> Para tags-->Display data in new lines.can apply all htnl attributes
+<b></b>->Bold,<I></i>->Italic,<U></U>->Underline
+<Font> Tag - three attributes with font are face,clour,size. But is depricated,means not used
+<Font size="7" color="Red" Face="Calibre"> My Font</Font>
+max size is 7 only
+
+Superscripts a2
+Subscripts H2O
+
+<h1> a<Sup>2</Sup></H1>
+<h1> H<Sub>2</sub>O</H1>
+
+Buletins - Ordered list - ol - Types are caps & small alphabets,numbers & Roman numbers..Default is numbers
+	 Un ordered list - ul - Types are circle,square & disc.Default is disc
+
+marquee - default scroll from right to left
+
+Tables
+tables should start with table tag
+tr->To create row
+th-table heading
+td-table data
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Java Script-By Nicholas c,zakas
+-----------
+clnt side language for web-page on browser
+server side language on Node.js
+desktop appln with Electron
+mobile native appln with tool support
+
+.js Features
+-------------
+-Function + OOP
+-Dynamic types
+-all io operations are by default non-blocking 
+     non blocking will not make the function waiting for all the functions to get loaded. Kinda Multithreading.Eg- Once in amazon we check out, one task will 
+place the order to vendor & another task will send mail about the orderts to us. This done parallelly called non blocking
+-single thread process, can execute concurrent action(parallell action) while IO happening .Event loupeis the feature which makes JS concurrent even though it is single thread.
+
+How to run .js program?
+-----------------------
+JDK - to design
+JRE - To run java .Similarly we need separate run engine to run .js
+
+.js-lang is based on 'ECMAScriot spec'
+latest ES6/ES7
+
+Datat types
+----------
+1) Simple
+ Undefined
+	variable that is not initialized is called undefined
+	typeof - used to give hte type of variable
+	var x;
+ String
+	any variable within single/double quotes is called string
+	var s1 = 'abc';
+	var s3= 'def';
+	concatenation
+ 	var s3=s1+s2;
+	+ for concatenation
+	$ should be used within `
+	var name = 'praveen'
+	var s4 = "hello" + name
+	var s5 = `hello dear ${name}`;
+ number
+	var x;
+	x= 10+20;
+ boolean
+	car x=true;
+2) Complex/reference
+ Objects
+how to create object
+var emp={};-->blank object
+var emp{
+id:12,name='xxx';
+}
+
+var p = new object();
+----------------------------------------------------------------------------
+Scope/Execution context:
+-------------------------
+1) Creation/push - 
+ 	variables with keyword "var" will get hoisted with default value(undefined) wherever declared in code.
+2)Execution/Pop - 
+	Instruction will exceute in sequence
+
+Local scope - variable defined in particular function.Kinda local varaibles.
+Global scope - variable defined outside the function.Kinda global varaibles.
+
+child scope - function defined inside a function.child scope can access anything from the parent function.
+java.lang.onject - is the super calss from all clasess in Java
+similarly, in JS, global object is window.
+every function has to return some values,
+
+ES-6 - let keyword overcomes the drawbacks of var
+-------------------------------------------------
+drawbacks of var - 1) it will get hoist first in the scope
+2) can declare many values using var-->var i=10;var i=30;
+3) var declared inside blocked scope can be exposed globally
+{var i=10;}
+console.log(i);
+
+
+Strict-mode - If i use strict mode, have to decalre the variable using let or var.if not used, then i can declare variables like below
+function f1(){
+i=100;
+}
+f1();
+console.log(i);
+-----------------------------------------------------------------------------------------------------------------------------------------
+clousers
+--------
+
+we can execute child data even the parent is destroyed.
+--------------------------------------------------------
+Types of functions
+------------------
+1) Function declaration-->fn can be called even before defining it
+2) Function Expresssion
+Function overloading not possible in JS
+while comparing, == will compare only content not type. So we have to use ===
+
+----------------------------------------------------------------------------------------
+GUI
+
+Innerhtml used to replace data
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+JSON - java Script Object Notation
+-----------------------------------
+--Used to exchange data from one language to another language
+--JASON supports text format
+--Supports by all languages
+--file extension is .json
+--it is an extension to JS
+--It does'nt store any data
+--XML also used for the same purpose. But its difficult to understand
+
+Syntax
+------
+{
+}
+
+Rules
+-----
+--Every JSON must have key & values
+--Key must be specified in double quotes
+--value can be anything
+--colon: must be used to separate key & value
+--JSON syntax must be validated from JSON parsers
+--Key can't be duplicate
+--Eg:
+{
+ "name": "praveen",
+	"id":1024,
+	"designation":"Trainer"
+}
+How to read data from JSON
+--(dot) operator to read data from JSON
+Eg:emp.name,
+emp.id
+
+Needs to define object like below
+emp={
+	"name": "praveen",
+	"id":1024,
+	"designation":"Trainer"
+}
+
+stringfy is used to conver t JSON
+No spl data types in JSON
+
+Arrays
+
+var emp={
+    "name": "bhakampriyal R",
+    "Id": 232895,
+    "Designation" : "Senior Developer"
+	"Technology Known":["Mainframe","Java","C","C++","Database"]
+}
+
+HTTP Status code
+-----------------
+1x: 100 to 199-->Information
+2x: 200 to 299-->Success
+3x: 300 to 399-->Redirection
+4x: 400 to 499-->Client side error
+5x: 500 to 599--> Server side error
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+XML - Extensible Markup language
+---------------------------------
+--Used to exchange data from one language to other language
+--language independent
+--Will not have pre defined tags
+--Will store data,but will not used for presentation purpose 
+
+Notes
+-----
+1) XML is not in text format.Its having own syntax rule
+2) if u are using java to wirte or read data from XML, then
+	--JAXB(Java API for XML Binding) - To write to XML
+	--JAXP(Java API for XML Processing) - To read data from XML
+JAXB is a parser
+
+Rules to form Simple XML file
+-----------------------------
+1) XML is case sensitive
+2) XML must have only single root element
+3) Every elmt must have corr. closing element.
+
+We can define our own tag
+
+XML validations
+----------------
+1) XML must be in well formed
+
+Validations
+-----------
+1) DTD(Document Type Definition)
+	-- Supports only PCDATA - parsed char data
+2) XSD(XML Schema Document)
+	-- Supports all data types like int,char,date,string etc.,
+
+Webservices
+------------
+1) SOAP - Simple Object..XML Based  
+	Implemented by JAX-WS
+2) REST - JSON based 
+	Implemented by JAX RS
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Spring
+
+ANT = Java Building Tool-Another Need Tool
+
+Jar - java Archive - Executable files,Contains only .class file
+war - Web Archive - Contains .class & multimedia files too. we need server to run.Need to run in browser
+ear - Enterprise Archive - Distributed programming language - EJB Enterprise Java Base.We need high level web application servers to run EJB. To deploy in such web application servers we need ear.ear is out dated & now pom come
+
+manual Build process - Copy all .java files into a folder & put it in a single package,compile which is jar files which contains only .class files.This manual process is automated using ANT.
+This ANT needs lots of scripts to run.TO overcome this maven came into picture
+
+Maven - it is a build tool.It will do testing as well as.It checks for dependencies,versions etc needs to be run 
+
+Notes on JAVa - 
+--------------
+Types of Objects
+-----------------
+1)Dependency Object
+2) Dependent object
+
+Dependency
+----------
+--Works independently
+--never dependent on any other class objects
+--usually at top level class hierarchy
+
+Dependent 
+---------
+--always depends on dependency object
+--any changes in dependency will impact it 
+
+Tightly couple approach
+------------------------
+--if a class dependent on other class & coz of dependency class chngs, all the dependent class get affected
+-- Extension of application not possible
+Eg- Abstract class
+
+Loosely coupled approach
+------------------------
+--All class objects are independently working together.
+--Extesnion of application is possible.
+Eg - Interfaces
+
+SOLID Class Principles
+
+Single responsibiity Principle
+Open CLosed principle
+Liskov's Substitution Principle
+Interface segregaton Principle
+Dependency Inversion Principle
+
+Abstract,Interface -
+https://github.com/richardsforu/Cognizant-IIT-CHN/tree/master/JAVA%20SE%20Docs%20and%20case%20Studies
+
+
+--Interface can extend to more than one interface
+--Interface can not implement another interface
+--class can implement more than one interface
+--class can not extends to another interface
+--class can extends to only one another class
+
+
+---------------------------------------------------------------------------------------------------
+1) Dependency objects are costly & it wil lcause memory as well as performance issue.
+	Whenever a dependent class create the dependency object, then its a bad code.
+Java Naming Directory Interface - JNDI - 
+---------------------------------------
+--With this we can search Dependency objects.
+--Pool Maintenance. Using look up technique. In this the objects are defined in different location & corr, server addr is given in the code, so that it will
+pick the object from there & use.It si the oldest technology
+
+--Issue with JNDI -
+	 If i get the object location from my pgm, then my pgm will be tightly coupled with that server location.If any change in server location, then 
+my pgm will get impacted by losing the server location.
+
+Best Solution - Don't find or search,ask someone to create & inject.It is called IoC - Inversion of Control Object.
+--------------
+
+How to implement IoC - 
+---------------------
+-- By using DI(Dependency Injection Technique)
+
+2 ways - 
+1) Using Setter based injection-->If need many times
+2) Using constructor based injection`-->If one time, we can use this
+
+Spring run on top of java & takes care of the DI process automatically
+Any xml fiel available under src folder is class path
+
+
+Prototype - Even if i use different ref variable for same emp id, if i change in e2,it will not reflect in e1.
+If i use singleton, then it will get reflect & for each reference variable separate object gets created.
+lazy-init- false - By default, for all id in xml, object will get created even we are used or not.to make it disable, we have to give lazy-init="true"
+
+
+extends - Is a relation ship.If department extends Employee,then it is Is a relationship
+
+instantiation - Capturing the object created by someone & used
+
+Injecting dependency object to the dependent is called Wiring concept
+
+without giving bean, creating object is called annotation
+To enable annotation, give context
+
+Predefined Stereo type Annotations -
+------------------------------------
+@Reporsitory - When class has database
+@Controller - When class is web level
+@Service - Normal class.Act as mediator between Test & database in case of using sensitive info like password
+@Configuration - To eliminate xml
+
+
+Layered Architecture
+--------------------
+1)dao - Data Access Object
+2) Service
+3) Controller(web app)
+@Component - Any thing not classified under above 4, then it is component.
+If Employee has object of Department, then it is Has a relationship
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+JDBC - java database connectivity
+Dadv of pure JDBC
+Exceptional handling poor 
+More queries needs to be written
+
+Spring JDBC - Recomended
+- Configuration is easy
+- secured 
+- No complicated queries
+
+ORM - Object relational Mapping 
+has optimized queries
+
+property file - Without compiling,changes will displayed when we run
+	it can be anything text,xml etc
+	keys in property file should be unique
+	usually databse information will be there in property file.
+
+@Bean - Annotation.This will call the method automatically.No need to call the method
+
+
+-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+Spring Web:
+----------
+-> Spring web MVC(Simple web application)
+-> Spring WEB Flow
+-> Spring Rest API(Java web services)
+
+Spring WEB MVC:
+--------------
+
+-> Web application is devided into 2 types
+1. Request driven development
+	1.Servelts,JSP (MVC optinal)
+	2.Struts(mvc based web framework)
+	3.Spring web mvc (mvc based web framework) 		
+2. Event driven development
+	1.JSF(java server faces)
+	
+
+MVC:(Model View Controller):
+---------------------------
+Model: Just java business logic
+View : Presentation logic(JSP-> Java server pages)
+Controller : Decides which model has to execute when?
+
+HTTP -(Hypertext transfer protocol):
+------------------------------------
+-> http 1.0 (stateless)
+-> http 1.1 (stateful)
+-> http 2.0 (stateful)
+
+Java based web servers:(doesnot support distributed development)
+------------------------
+1. Apache tomcat - web server
+
+JAVA based web application servers
+----------------------------------
+1. Jboss
+2.Glashfish  -> deploy only java based application
+3. Web logic
+
+Spring MVC - Tomcat Server
+-------------------------------------
+Spring MVC 
+request -> responsible to send request to a server
+Response -> sever gives data to client in the form of response
+
+> client sends request, and server gives response
+
+Structure of web application:(folders in spring):
+-------------------------------------------------
+My app
+ -> webapp
+	html/css/js,images
+	->WEB-INF
+		-> lib
+		-> classes
+		-> web.xml
+
+----------------------------------------------------------------------
+Spring MVC 
+
+Dispatcher servlet(DS) - Takes req from browser, Responsible to tell which controller needs to execute
+Handler Mapper - Has Complete list of controller. DS will ask, i got request for s1, which method is mapped to s1. Handler mapper search & found the class & give it back to DS
+Now DS directly ask the corr. controller & get the data as response from that controller as ModelAndView.
+
+Now DS request View Resolver for jsp of the view it got from controller . Complete list of jsp. Once View gives the response, DS gives back response to browser.
+
+
+jsp - java server page- Dynamic page
+can display anything from java
+
+Through model interface data can be passed from controller to jsp.
+
+
+Things under webapp is public one.Any one can send req
+Things under web-inf is secured data.
+
+
+JSTL - JSP Std Tag Library
+
+@RequestParam - Annotation, to read the input in form to controller
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
